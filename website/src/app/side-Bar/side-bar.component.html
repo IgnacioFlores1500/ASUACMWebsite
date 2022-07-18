@@ -1,57 +1,21 @@
-<div class="bodyOfSideBar">
-    <div class="asuLogo">
-        <img src="../../assets/ASULogo.jpg" alt="ASULOGO" class="sideAsuLogo">
-        <div class="text">
-            <h1 class="Header">
-                Input text
-            </h1>
-            <div class="buttons">
-                <div>
-                    <button class="button">
-                        HomePage
-                    </button>
-                </div>
-                <div>
-                    <button class="button">
-                        Calendar
-                    </button>
-                </div>
-                <div>
-                    <button class="button">
-                        Socials
-                    </button>
-                </div>
-                <div>
-                    <button class="button">
-                        Alumni
-                    </button>
-                </div>
-                <div>
-                    <button class="button">
-                        Staff
-                    </button>
-                </div>
-
+<div>
+    <mat-sidenav-container class="sideNav-Container">
+        <mat-sidenav #sidenax mode="push">
+            <div *ngFor="let course of courses">
+                <button class="button">
+                    {{course}}
+                </button>
             </div>
-        </div>
-    </div>
-    
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <!--<app-menu-icon mat-button (click)="sidenax.toggle()">sidenav.toggle() </app-menu-icon> -->
+            <p>
+                <button mat-button (click)="sidenax.toggle()">Sections
+
+                </button>
+            </p>
+        </mat-sidenav-content>
+
+      </mat-sidenav-container>
 </div>
-<!-- <ul>
-    <li><button>
-        HomePage
-    </button></li>
-    <li><button>
-        Calendar
-    </button></li>
-    <li><button>
-        Socials
-    </button></li>
-    <li><button>
-        Alumni
-    </button></li>
-    <li><button>
-        Staff
-    </button></li>
-    <li><button>
-</ul> -->
