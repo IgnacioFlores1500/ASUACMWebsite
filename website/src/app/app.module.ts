@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './side-Bar/side-bar.component';
 import { sidebarService } from './side-Bar/side-bar.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TestStolenBarComponent } from './test-stolen-bar/test-stolen-bar.component';
+
 
 
 //Stolen imports
@@ -16,12 +16,14 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MenuIconComponent } from './menu-icon/menu-icon.component';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatIconModule} from '@angular/material/icon'; 
+import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';  
+import {MatListModule} from '@angular/material/list'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
-    TestStolenBarComponent,
     MenuIconComponent
   ],
   imports: [
@@ -31,7 +33,11 @@ import {MatIconModule} from '@angular/material/icon';
     MatSliderModule,
     MatSidenavModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule,
+    MatToolbarModule,
+    MatGridListModule,
+    MatListModule
     
   ],
   providers: [sidebarService],

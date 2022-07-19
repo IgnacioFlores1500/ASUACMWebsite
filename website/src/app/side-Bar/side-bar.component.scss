@@ -1,28 +1,59 @@
 p {
     color: white;
 }
-
 .sideNav-Container {
-  width: 200px;
-  height: 900px;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  width: 15em;
+  height: 100%;
+  //border: 2px solid rgba(255, 0, 0, 0.5);
   color: darkcyan;
-  background-color: darkslategrey;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.LogoHolder {
+  width: 180px;
+  height: 100px;
+  text-align: center;
+  // border-style: solid;
+  // border-color: green;
 }
 
 
-@media only screen and (max-height: 600px) {
-  .sideNav-Container {
-    width: 200px;
-    height: 700px;
-    text-align: center;
-    text-size-adjust: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    color: darkcyan;
-    background-color: darkslategrey;
+// .buttonBody { //fuck you vs code intelsense
+//   // border-style: solid;
+//   // border-color: green;
+// }
+
+.button {
+  width: 8em;
+  height: 3em;
+  margin: 1em;
+  background-color: transparent;
+  border-style: none;
+  font-size: 1.5em;
+}
+
+.button:hover {
+  background-color: rgb(28, 31, 39);
+}
+
+@media screen and (max-width: 1000px) {
+  .button:hover {
+    background-color: rgb(255, 0, 0);
   }
 }
+  
+
+
+
+
+
+
 
 
   
