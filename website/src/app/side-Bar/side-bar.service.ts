@@ -1,5 +1,7 @@
 export class sidebarService {
+
+
     returnNavBarSections() {
-        return ["HomePage","Calendar","Socials","Alumni","Staff"]; 
+        return ["Home","Calendar","Socials","Alumni","Staff"]; 
     }
 };

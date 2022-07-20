@@ -1,13 +1,31 @@
-      <mat-sidenav-container class="sideNav-Container">
-        
-        <mat-sidenav-content >
-            <p class="LogoHolder">
-                LOGO HOLDER
-            </p>
+      <mat-sidenav-container (backdropClick)="close()" class="sideNav-ContainerV2">
+        <mat-sidenav #sidenav mode="over" class=AfterClickNav>
+            <!-- <p class="LogoHolder"> -->
+                <img src="../../assets/AngeloStateUniversitylogo.png" alt="ASU LOGO" class="LogoHolder">
+            <!-- </p> -->
                 <div class="buttonBody" *ngFor="let course of courses">
-                    <button mat-raised-button color="primary" class="button">
+                    <button mat-raised-button color="primary" mat-button (click)="sidenav.toggle()" class="button">
                         {{course}}
                     </button>
                 </div>
+                <div>
+                    <img src="../../assets/Discord-Logo-White.png" mat-button (click)="sidenav.toggle()" alt="Discord Logo" class="smallLogoButtons">
+                </div>
+
+        </mat-sidenav>
+        <mat-sidenav-content >
+
+            <button mat-icon-button color="accent" mat-button (click)="sidenav.toggle()" >
+                <mat-icon>menu</mat-icon>
+              </button>
+
+            <!-- <p class="LogoHolder">
+                <img src="../../assets/ASULogo.jpg" alt="ASU LOGO">
+            </p>
+                <div class="buttonBody" *ngFor="let course of courses">
+                    <button mat-raised-button color="primary" mat-button (click)="sidenav.toggle()" class="button">
+                        {{course}}
+                    </button>
+                </div> -->
         </mat-sidenav-content>
       </mat-sidenav-container>

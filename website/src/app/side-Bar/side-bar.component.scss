@@ -1,24 +1,46 @@
-p {
-    color: white;
-}
+
 .sideNav-Container {
 
   width: 15em;
   height: 100%;
   //border: 2px solid rgba(255, 0, 0, 0.5);
   color: darkcyan;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.863);
   display: flex;
   align-items: center;
   justify-content: center;
   
+}
 
+.sideNav-ContainerV2 { 
+  width: 15em;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  // display: flex;
+  // justify-items: center;
+  // align-items: center;
+  // border-style: solid;
+  // border-color: red;
+}
+
+.AfterClickNav {
+  // display: flex;
+  // justify-items: center;
+  // align-items: center;
+  background-color: rgba(0, 0, 0, 0.800);
+  // border-style: solid;
+  // border-color: green;
 }
 
 .LogoHolder {
-  width: 180px;
-  height: 100px;
-  text-align: center;
+  width: 10em;
+  height: 6em;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10%;
+  //width: 50%;
   // border-style: solid;
   // border-color: green;
 }
@@ -36,6 +58,16 @@ p {
   background-color: transparent;
   border-style: none;
   font-size: 1.5em;
+  // border-style: solid;
+  // border-color: red;
+}
+
+.smallLogoButtons {
+  width: 5%;
+  height: auto;
+
+  border-style: solid;
+  border-color: red;
 }
 
 .button:hover {
