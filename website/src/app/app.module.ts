@@ -18,13 +18,17 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';  
-import {MatListModule} from '@angular/material/list'; 
+import {MatListModule} from '@angular/material/list';
+import { BodyComponent } from './body/body.component';
+import { BodyStaffComponent } from './body-staff/body-staff.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
-    MenuIconComponent
+    MenuIconComponent,
+    BodyComponent,
+    BodyStaffComponent
   ],
   imports: [
     BrowserModule,

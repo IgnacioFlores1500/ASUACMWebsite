@@ -1,0 +1,103 @@
+h1 {
+    border-style: dashed;
+    border-color: green;
+    // display: flex;
+    // align-content: center;
+    // align-items: center;
+    // justify-content: center;
+    
+}
+
+div {
+    border-style: dashed;
+    border-color: greenyellow;
+}
+
+p {
+    border-style: dashed;
+    border-color: red;
+}
+
+li {
+    list-style-type:none;
+    
+    
+
+}
+
+section {
+    border-style: dashed;
+    border-color:yellow;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    //flex-direction: column;
+    // width: 50%;
+    // justify-content: center;
+}
+
+
+.PersonBio {
+    width: 20ch;
+}
+
+.OfficerBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Officer {
+    width: 25%;
+    // display: flex;
+    // justify-content: left;
+    // align-items: left
+    // ;
+}
+
+.Officers {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    border-style: dashed;
+    border-color:turquoise;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+
+.WholeBody {
+    border-style: dashed;
+    border-color: brown;
+    display: flex;
+    height: 100%;
+    
+    flex-wrap: wrap;
+}
+.photo {
+    width: 20%;
+    height: auto;
+}
+
+.biophoto {
+    width: 10%;
+    min-width: 100px;
+    // display: flex;
+    // align-content: center;
+    // align-items: center;
+    // justify-content: center;
+    // flex-grow: 2;
+}
+
+.Staff {
+    border-style: dashed;
+    border-color: rgb(145, 0, 203);
+}
+
+.photo:hover {
+    width: 25%;
+}
